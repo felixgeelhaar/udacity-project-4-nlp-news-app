@@ -1,9 +1,11 @@
-- Project Instructions(#project)
-- Development(#development)
-- Running with the Aylien NLP(#running)
-- Done(#done)
+# Project Overview
 
-# Project Instructions
+- [Project Instructions](#project)
+- [Development](#development)
+- [Running with the Aylien NLP](#running)
+- [Done](#done)
+
+## Project Instructions
 
 This repo is your starter code for the project. It is the same as the starter
 code we began with in lesson 2. Install and configure Webpack just as we did in
@@ -19,8 +21,8 @@ The goal of this project is to give you practice with:
 - Service workers
 - Using APIs and creating requests to external urls
 
-# Development
+## Development
 
-# Running with the Aylien NLP
+## Running with the Aylien NLP
 
-# Done
+## Done
