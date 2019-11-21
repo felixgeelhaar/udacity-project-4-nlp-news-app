@@ -1,6 +1,6 @@
 # Project Overview
 
-- [Project Instructions](#project)
+- [Project Instructions](#project-instructions)
 - [Development](#development)
 - [Running with the Aylien NLP](#running)
 - [Done](#done)
