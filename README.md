@@ -23,6 +23,30 @@ The goal of this project is to give you practice with:
 
 ## Development
 
+To start development you simply run `npm start` for running the server and
+`npm run build-dev` to run the webpack-dev-server for the UI part.
+
+Additionally I recommend to run in a separate terminal window `npm t -- --watch`
+to run the test suits in parallel in watch-mode. So you're able to see if you
+break core functionality.
+
+Please enhance the test cases if you add functionality
+
 ## Running with the Aylien NLP
 
+To run the server with the Aylien NLP you need an API Key and Application ID in
+an .env file. `AYLIEN_APP_ID` and `AYLIEN_API_KEY` as attribute with the related
+content.
+
+Now you're able to run the server with the Aylien API to get a language
+processing.
+
 ## Done
+
+The Server part was enhanced with additional `get, post` requests. The `post`
+request requests data from the Aylien API and responds with an error or an
+proper response.
+
+The UI Part was adapted to support SASS & CSS. The whole UI build process was
+created with webpack. Some UX for offline functionality got added and last but
+not least unit tests.
