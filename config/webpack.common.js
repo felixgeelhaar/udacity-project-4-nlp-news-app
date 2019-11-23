@@ -26,37 +26,8 @@ module.exports = {
     new WorkboxPlugin.GenerateSW({
       clientsClaim: true,
       skipWaiting: true,
-      directoryIndex: 'index.html',
+      navigateFallback: 'index.html',
       cleanupOutdatedCaches: true,
-      runtimeCaching: [
-        {
-          urlPattern: /api/,
-          handler: 'NetworkFirst',
-          options: {
-            networkTimeoutSeconds: 10,
-            cacheName: 'aylien-cache',
-            expiration: {
-              maxEntries: 5,
-              maxAgeSeconds: 60,
-            },
-          },
-          cacheableResponse: {
-            statuses: [0, 200],
-          },
-        },
-        {
-          urlPattern: /index.html/,
-          handler: 'CacheFirst',
-        },
-        {
-          urlPattern: /styles/,
-          handler: 'CacheFirst',
-        },
-        {
-          urlPattern: /.js/,
-          handler: 'CacheFirst',
-        },
-      ],
     }),
   ],
 }

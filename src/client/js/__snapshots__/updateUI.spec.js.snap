@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`updateUI Tests showOfflineMessage 1`] = `
+<p
+  id="offline"
+>
+  You seem to be offline!
+</p>
+`;
+
+exports[`updateUI Tests updateUIWithNegativeResponse 1`] = `
+<div
+  id="results"
+>
+  <p
+    class="error"
+  >
+    This is an error
+  </p>
+</div>
+`;
+
+exports[`updateUI Tests updateUIWithPositiveResponse 1`] = `
+<div
+  id="results"
+>
+  <p>
+    Polarity: 
+    <b>
+      test
+    </b>
+     with confidence of 1.2
+  </p>
+  
+  Subjectivity: 
+  <b>
+    test
+  </b>
+   with confidence of test
+  <p />
+  
+  
+  <pre>
+    Text analysed
+  </pre>
+  
+  
+  <div
+    id="text"
+  >
+    <blockquote>
+      undefined
+    </blockquote>
+  </div>
+</div>
+`;

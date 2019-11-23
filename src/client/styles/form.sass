@@ -1,3 +1,10 @@
+#offline
+    border: 1px dotted red
+    margin: .5em auto
+    padding: .5em
+    text-align: center
+    color: red
+
 form
     border: 1px solid #545454
     border-radius: 3px
@@ -8,6 +15,22 @@ input
     width: 100%
     line-height: 16px
     margin: 10px 0
+
+#submit
+    &:disabled:hover
+        cursor: not-allowed
+    &:hover
+        cursor: pointer
+
+#form-results
+    strong
+        font-family: "Amatic SC", sans-serif
+        font-size: 1.5em
+
+    pre
+        font-style: italic
+        padding: 1em 0
+        color: green
 
 #results
     h2

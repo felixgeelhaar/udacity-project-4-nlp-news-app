@@ -25,6 +25,7 @@ export const handleSubmit = async event => {
 
     // Clear form text input value
     formText.value = ''
+    formText.dispatchEvent(new Event('input'))
 
     // Update UI with response from Aylien API
     updateUIWithPositiveResponse(analyse)
