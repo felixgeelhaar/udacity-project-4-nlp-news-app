@@ -2,7 +2,6 @@ var path = require('path')
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const mockAPIResponse = require('./mockAPI.js')
 
 const Analyse = require('./nlp')
 
@@ -34,11 +33,6 @@ app.post('/api/analyse', async (req, res) => {
   } catch (e) {
     res.status(404).send(e)
   }
-})
-
-// Debug endpoint for testing purposes
-app.get('/test', function(req, res) {
-  res.send(mockAPIResponse)
 })
 
 // designates what port the app will listen to for incoming requests
