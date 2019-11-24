@@ -54,3 +54,15 @@ export const showOfflineMessage = () => {
   const offline = "<p id='offline'>You seem to be offline!</p>"
   first.insertAdjacentHTML('afterbegin', offline)
 }
+
+// show an loading indicator while loading
+export const showLoadingIndicator = () => {
+  const resultsElement = document.getElementById('results')
+  const loadingText = `<p>Analysing...</p>`
+
+  if (document.getElementById('form-results').hasAttribute('style')) {
+    makeResultsSectionVisible()
+  }
+
+  resultsElement.innerHTML = loadingText
+}

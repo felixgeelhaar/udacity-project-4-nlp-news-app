@@ -1,10 +1,12 @@
 import {
   updateUIWithPositiveResponse,
   updateUIWithNegativeResponse,
+  showLoadingIndicator,
 } from './updateUI'
 
 export const handleSubmit = async event => {
   event.preventDefault()
+  showLoadingIndicator()
   const formText = document.getElementById('name')
   let body = JSON.stringify({text: formText.value})
 
